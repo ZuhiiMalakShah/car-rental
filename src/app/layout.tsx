@@ -5,8 +5,8 @@ import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Easy Drive",
-  description: "Welcome to EasyDrive a car rental website",
+  title: "Car Rental Project by Zuhii Shah",
+  description: "Welcome to Zuhii Shah project a car rental website",
 };
 
 export default function RootLayout({
