@@ -108,7 +108,7 @@ const TermOfServicePage = () => {
           <h2 className="text-2xl font-bold mb-4">9. Contact Us</h2>
           <p className="text-gray-700">
             If you have any questions about these Terms of Service, please
-            contact us at support@easydrive.com.
+            contact us at sultansalahuddin295@gmail.com.
           </p>
         </section>
 
