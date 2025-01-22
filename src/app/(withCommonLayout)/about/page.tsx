@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
       <header className="bg-white w-full shadow-md p-6 mb-8 text-center">
         <h1 className="text-4xl font-bold text-blue-700">
-          About Us - EasyDrive
+          About Us - Car Rental
         </h1>
       </header>
 
@@ -32,12 +32,12 @@ const AboutUs = () => {
           <div className="flex flex-col items-center">
             <Image
               src={team1}
-              alt="John Doe"
+              alt="Zuhi Shah"
               width={128}
               height={128}
               className="rounded-full mb-4"
             />
-            <h3 className="text-xl font-bold">John Doe</h3>
+            <h3 className="text-xl font-bold">Manzoor Ahmed Mehar</h3>
             <p className="text-gray-600">CEO & Founder</p>
           </div>
           {/* Team Member 2 */}
@@ -49,7 +49,7 @@ const AboutUs = () => {
               height={128}
               className="rounded-full mb-4"
             />
-            <h3 className="text-xl font-bold">Jane Smith</h3>
+            <h3 className="text-xl font-bold">Aliya Manzoor</h3>
             <p className="text-gray-600">Chief Operations Officer</p>
           </div>
           {/* Add more team members as needed */}
@@ -84,14 +84,13 @@ const AboutUs = () => {
       <section className="bg-white w-full max-w-3xl rounded shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
         <p className="text-gray-700 mb-2">
-          <strong>Phone:</strong> +1 234 567 890
+          <strong>Phone:</strong> +92 323 3004201
         </p>
         <p className="text-gray-700 mb-2">
-          <strong>Email:</strong> support@easydrive.com
+          <strong>Email:</strong> hafsamz212@gmail.com
         </p>
         <p className="text-gray-700">
-          <strong>Address:</strong> 123 EasyDrive Lane, Suite 100, Car City, CA
-          12345
+          <strong>Address:</strong>  Sakrand Nawbashah 
         </p>
       </section>
     </div>
