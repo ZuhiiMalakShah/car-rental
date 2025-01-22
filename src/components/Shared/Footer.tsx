@@ -43,7 +43,7 @@ const Footer = () => {
           py={3}
         >
           <Typography component="p" color="white">
-            &copy;{year} EasyDrive . All Rights Reserved.
+            &copy;{year} Car Rental . All Rights Reserved By Aliya Manzoor.
           </Typography>
           <Typography
             variant="h4"
