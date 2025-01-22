@@ -1,0 +1,277 @@
+
+
+
+-------------------- 10:18 AM 12/14/2024, sa
+
+[10:57 AM 1/1/2025 - Done] - Remove every single authorize token headers from redux api endpoint and check every single api endpoint working fine
+ Did not check every api endpoints working fine. Because it will take time, only check car routes and review api CRUD operation
+ In future if there problem with accessing route check that specific route issue for token.
+
+-------------------- 11:02 AM 12/12/2024, th
+
+Done - There is problem in dashboard. Dashboard data is not showing. Confirm user dashboard problem. There could be also problem with admin.
+[Solution] - Problem with token is expired so have to logout and login and it works
+
+-------------------- 8:55 AM 12/11/2024, we
+
+Done - Axios Setup done properly
+
+Done - Token properly send from axios client to server check using getAllCars api endpoint
+
+-------------------- 10:02 AM 10/23/2024, we
+
+for future - Fixed the issue with JWT expired. 
+Step1: First get axios error response with jwt expired message or directly use redux error response to check jwt expired message
+Step2: if so then logout user
+
+-------------------- 10:05 AM 10/19/2024, sa
+
+Done - Axios need to properly setup. Axios is not properly setup for both sending token headers or getting responses
+Done - Step1: Make sure when sending token from client using axios server get the token 
+Done - Step2: Get correct response from axios and show response result 
+Done - Step3: For POST or PUT/PATCH request sending update and create data properly. 
+       Like there is two different way to send data using 'body' property redux way or 'data' property axios way see what to use. Currently I in favor for 'body' way
+[Solution] - In axiosInstance for error or response send directly without any modification. 
+              And problem with 'body' and 'data' conflict solve by in axiosBaseQuery use 'body' property to receive input for POST and set 'data' property value to 'body' property 
+
+-------------------- 10:44 AM 10/7/2024, su
+
+Done - for future - Remove unused svg and pictures from assets
+
+-------------------- 10:44 AM 10/7/2024, su
+
+Done - Create a common or reusable BookingForm, UpdateBookingForm, and ReturnCarForm component
+
+-------------------- 9:52 AM 10/1/2024, tu
+
+Done - Use common car card to show car info in bookings and return car page
+
+[fixed] - DB URL is not working. First cluster db url working like ThriftStore db but not second cluster
+10:22 AM 10/8/2024 - I think problem with my network
+
+-------------------- 10:32 AM 9/29/2024, su 
+
+Done - Add validation to all of startTime, endTime and startDate select field
+[Solution] - Add validation for both User and admin. Because UpdateBooking and ReturnCar are reusable component that both use in user and admin.
+
+-------------------- 7:34 PM 9/28/2024, sa
+
+Done -  For startTime select field, check startTime is greater then current Time doing that it will solved the problem with past time selection, by making selected time invalid
+ 
+Done - For endTime select field, check endTime is greater then startTime doing that will make, problem with minus total cost calculation solved
+
+Done - For startDate select field add min date as current date to date field it will make all the previous date disabled
+
+Done - Fix the issue in return car with previous time select. User can only select future time for return car
+[Solution] - first check endTime hour is greater then startTimeHour if so add selected endTime to state or endTimeHour is equal to startTimeHour then check endTime minute is greater then startTimeMinute if both condition failed then fall back startTime plus oneHour to endTime
+
+Done - Fix the issue with previous date select in Booking. User can only select future or present date
+
+Done - Test git after changing local remote url by set-url - 7:34 PM 9/28/2024
+
+-------------------- 11:45 AM 9/13/2024, fr
+
+[Success] - Deploy to vercel remove notification icon from dashboard headers, update manage-cars, manage-users page - 4:25 PM 9/13/2024
+
+[Success] - Deploy to vercel - 4:02 PM 9/13/2024
+
+Done - Add button to change state of login defaultValues
+
+Done - Update register link style in login and in register update style of login link
+
+Done - Add Signup button along with login and different these two button by border, from rest of nav item
+
+for future - admin can block a user or unblock user
+
+for future - confirm, reject booking for admin
+
+for future - Before any delete show Confirmation Modal mainly car and user
+
+-------------------- 10:12 AM 9/12/2024, th
+
+[Success] - Deploy to vercel after fixing with issue with accepting term issue - 11:00 PM 9/12/2024
+[Solved] - If Manually accept the term&condition then use form filler the checkbox is not update because of it did not use checked property as termAndCondition state
+
+[Success] - Deploy to vercel after adding disabled submit button if loading - 10:05 PM 9/12/2024
+[Solved] - in Confirm Booking in user booking, login, Register, ReviewForm, and to other form submit button  
+
+[Success] - Deploy to vercel after fixing adding title in booking car, TransactionId column more wider issue - 8:35 PM 9/12/2024
+
+[Success] - Deploy to vercel after fixing MyReviews issue - 7:48 PM 9/12/2024
+
+[Fixed] - Issue with MyReviews it is displaying all reviews instead of user own reviews
+[Solved] - forgot add /my-reviews in api slice
+
+[Success] - Deploy to vercel after password validation length change - 6:40 PM 9/12/2024
+
+[Success] - Deploy to vercel - 6:14 PM 9/12/2024
+
+Done - Update car price to hour and use tk in amount
+
+for future - add main navbar item to dashboard headers
+
+for future - Add redux persist for storing user info after success login and remove on logout 
+
+Done - Edit booking in user and admin - update title
+
+Done - After booking success car status is not updated to unavailable
+[Solved] - add car tagTypes to booking mutation for create, update and delete
+
+Done - In user hide edit icon if car return
+
+Done - In user, update title of booking page after payment btn redirect to order page 
+
+for future - handle cancel booking for users
+
+[Success] - Deploy to vercel - 12:09 PM 9/12/2024
+
+for future - dropdown menus for navbar account menu item is not link but text is.
+
+-------------------- 11:26 AM 9/11/2024, we
+
+
+for future - Price: $500/day - Price Per Hour - So need adjust car price
+Enterprise price - $67.79 Per Day, $69.69 Per Day
+nationalCar price - $ 73.40 / day, $ 80.94 / day
+kayak price - $877
+
+for future - confirm password 
+for future - admin can update car status
+
+Done - update profile problem displaying previous data for admin need to see user having same problem
+[Solved] - In EasyDriveForm use, useEffect and reset for defaultValues 
+
+Done - Deploy to vercel - 6:30 PM 9/11/2024
+
+Done - UpdateReview for user
+
+Done - Show Reviews in User ManageReviews
+
+Done - Reviews in Admin ManageReviews
+
+Done - Show Orders in User ManagePayments
+
+Done - Successfully deploy to vercel - 2:16 PM 9/11/2024
+
+[Fixed] - For both defaultValues and validationSchema the error is for export
+
+[Fixed] - Deploy Problem for because of export const validationSchema. 
+
+[Fixed] - Deploy Problem for because of export const defaultValues are outside of component 
+
+Done - Start Deploying to vercel on previous project Vite + Shadcn - 1:34 PM 9/11/2024
+
+Done - Admin can make a user to a admin
+
+
+-------------------- 10:20 AM 9/10/2024, tu
+
+Done - CreateCar and UpdateCar. Form update with Multiple Select field for features, Grid from MUI for responsive input field and checkbox
+
+Done - Show Reviews in User ManageReviews - 5:06 PM 9/11/2024
+
+Done - Show Reviews in Admin ManageReviews - 4:40 PM 9/11/2024
+
+Done - Show Orders in User ManagePayments - 4:06 PM 9/11/2024
+
+Done - Update Profile content update by changing route
+
+Done - toggle between profile update button display or hide
+
+
+-------------------- 9:38 AM 9/9/2024, mo
+
+Done - Payment integration successfully
+
+Done - return car for user
+
+Done - UserProfile api slice, UserProfile Page with form, Update UserProfile
+
+
+-------------------- 3:58 PM 9/8/2024, su
+
+Done - Reviews. ReviewApi slice, ReviewForm for submitting review and show Car Reviews in Card and Hide review form from guest user 
+
+Done - Update Booking For Admin and User. But did not check user is same user who booked the car
+
+
+-------------------- 3:38 PM 9/7/2024, sa
+
+Axios need to properly setup. Axios is not properly setup for both sending token headers or getting responses
+
+
+-------------------- 10:33 AM 9/6/2024, fr
+
+Done - Add Axios Base Query and Instance function
+
+Done - Change Password page design
+
+Done - Forgot Password page design
+
+Done - Create getSingleUser api for admin
+
+Done - both page and api. Add UpdateUserPage functionality after api is done 
+
+
+-------------------- 11:27 AM 9/5/2024, th
+
+Done - Update Footer
+
+Done - Terms & Condition ternary in register. Add PrivacyAndPolicyPage, TermOfServicePage, TermsAndConditionPage components from previous project
+
+Done - User UpdateBooking form page from admin UpdateBooking form page
+
+Done - User ManageBookings Table from admin MangeBookings table page
+
+Done - ReturnCar functionality with MangeReturnCars table
+
+Done - MangeReturnCars table in admin
+
+Done - Create admin and user in Admin ManageUsers page
+
+Done - MangeUsers table in admin
+
+Done - FeaturedCars show 3 cars using slice
+
+Done - UpdateBooking design with get updated time and date value
+
+Done - Manage Booking table in admin  
+
+Done - Delete Car
+
+Done - Update Car from previous project 
+
+Done - Create Car from previous project
+
+Done - Create Profile Module in Backend and use this module to show Profile Data take inspiration from renovator project
+
+Done - Create Booking update api in server for admin and user
+
+Done - Create Get single booking api for both user and admin
+
+------------------- 
+Done - Secure Dashboard Layouts using user role
+
+Done - Car Booking from previous project
+
+Done - Car Details from previous project
+
+Done - Show All Cars from previous project
+
+Done - Logout, services auth token, user info functionality,
+
+Done - Login and Register Design and functionality
+
+Done - ManageCars Table. Show Minimum one Table. 
+
+See, can axios be setup
+
+Done - Setup Dashboard and Main Layout by MUI
+
+Done - Setup MUI
+
+Done - Setup Pages for  admin and user routing, from previous project routes.
+
+Done - Add Api slices, from previous Vite with Shadcn project
+
+Done - Setup Redux, RTK Query
