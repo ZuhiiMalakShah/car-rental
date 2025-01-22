@@ -87,7 +87,7 @@ const AboutUs = () => {
           <strong>Phone:</strong> +92 323 3004201
         </p>
         <p className="text-gray-700 mb-2">
-          <strong>Email:</strong> hafsamz212@gmail.com
+          <strong>Email:</strong> sultansalahuddin295@gmail.com
         </p>
         <p className="text-gray-700">
           <strong>Address:</strong>  Sakrand Nawbashah 
