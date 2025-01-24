@@ -10,10 +10,10 @@ Welcome to **Easy Drive**, a comprehensive car rental service application backen
 
 ## `Useful Links`
 
-**3. [Live Website](https://easydrivego.vercel.app)** \
-**2. [Live Server](https://easydrive-backend.vercel.app)** \
-**1. [Github Client Side Repository](https://github.com/yusuf-khan-swd/easy-drive-frontend-nextjs)** \
-**1. [Github Server Side Repository](https://github.com/yusuf-khan-swd/easy-drive-backend)**
+**3. [Live Website](https://car-rental-sable-six.vercel.app/)** \
+**2. [Live Server](https://car-rental-sable-six.vercel.app/)** \
+**1. [Github Client Side Repository](https://github.com/ZuhiiMalakShah/car-rental)** \
+**1. [Github Server Side Repository](https://github.com/ZuhiiMalakShah/car-rental)**
 
 ## Features
 
@@ -46,29 +46,6 @@ Welcome to **Easy Drive**, a comprehensive car rental service application backen
 - npm (v6 or higher) or yarn (v1.22 or higher)
 - MongoDB instance (local or cloud)
 
-### Installation Steps
-
-1. **First step** => Clone the project
-
-   ```sh
-   git clone https://github.com/yusuf-khan-swd/easy-drive-frontend-nextjs.git
-   cd easy-drive-frontend-nextjs
-   ```
-
-2. **Second step** => Install all the packages using
-
-   ```sh
-   npm install
-   ```
-
-3. **Final step** => Run your code by using
-
-   ```sh
-   npm run dev
-   ```
-
-```markdown
-# Routes
 
 ## Public Routes
 
